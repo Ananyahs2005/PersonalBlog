@@ -1,0 +1,24 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+<div class="container my-5 py-5 px-4 shadow-sm bg-white rounded" style="max-width: 800px; font-family: 'Arial', sans-serif;">
+    <h1 class="text-center text-dark mb-4">About My Personal Blog</h1>
+    <hr style="width: 70px; border-top: 3px solid #6c757d; margin: 0 auto 30px;">
+    
+    <p style="font-size: 1.15rem; color: #333; line-height: 1.7;">
+        Welcome to <strong>my personal blog</strong> - a dedicated space where I share my own experiences, thoughts, and stories. This website is a personal project, not a public or commercial platform. It’s my way of documenting life’s moments and ideas that inspire me.
+    </p>
+    <p style="font-size: 1.1rem; color: #444; line-height: 1.6;">
+        Here, you won’t find mass-produced content or trending news - just honest reflections and genuine insights from my life. I hope you enjoy reading and find something meaningful in these posts.
+    </p>
+    <p style="font-size: 1.1rem; color: #444; line-height: 1.6;">
+        Thank you for stopping by and sharing this journey with me.
+    </p>
+
+    <div class="text-center mt-4">
+        <a href="{% url 'blog-home' %}" class="btn btn-dark px-5 py-2 rounded-pill shadow-sm">
+            Back to Home
+        </a>
+    </div>
+</div>
+{% endblock content %}
